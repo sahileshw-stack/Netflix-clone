@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Thanks for Joining Netflix</title>
+</head>
+
+<body
+  style="
+    margin:0;
+    padding:0;
+    background:#f3f3f3;
+    color:#232323;
+    font-family:Arial, Helvetica, sans-serif;
+  "
+>
+  <table
+    role="presentation"
+    width="100%"
+    cellspacing="0"
+    cellpadding="0"
+    border="0"
+    style="
+      width:100%;
+      background:#f3f3f3;
+      border-collapse:collapse;
+    "
+  >
+    <tr>
+      <td
+        align="center"
+        style="padding:0;"
+      >
+        <table
+          role="presentation"
+          width="470"
+          cellspacing="0"
+          cellpadding="0"
+          border="0"
+          style="
+            width:100%;
+            max-width:470px;
+            background:#ffffff;
+            border-collapse:collapse;
+            border-left:1px solid #dddddd;
+            border-right:1px solid #dddddd;
+          "
+        >
+          <tr>
+            <td style="padding:20px 38px 40px;">
+
+              <!-- TOP LOGO -->
+
+              <table
+                role="presentation"
+                width="100%"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                style="border-collapse:collapse;"
+              >
+                <tr>
+                  <td style="padding:0 0 20px;">
+                    <img
+                      src="cid:netflix-logo"
+                      width="24"
+                      alt="Netflix"
+                      style="
+                        display:block;
+                        width:24px;
+                        height:auto;
+                        border:0;
+                        outline:none;
+                        text-decoration:none;
+                      "
+                    >
+                  </td>
+                </tr>
+
+                <!-- TITLE -->
+
+                <tr>
+                  <td style="padding:0 0 20px;">
+                    <h1
+                      style="
+                        margin:0;
+                        color:#232323;
+                        font-family:Arial, Helvetica, sans-serif;
+                        font-size:34px;
+                        line-height:39px;
+                        font-weight:800;
+                        letter-spacing:-1px;
+                      "
+                    >
+                      Thanks for joining Netflix
+                    </h1>
+                  </td>
+                </tr>
+
+                <!-- GREETING -->
+
+                <tr>
+                  <td
+                    style="
+                      padding:0 0 20px;
+                      color:#232323;
+                      font-size:15px;
+                      line-height:21px;
+                    "
+                  >
+                    Hi {{USER_NAME}},
+                  </td>
+                </tr>
+
+                <!-- INTRO -->
+
+                <tr>
+                  <td
+                    style="
+                      padding:0 0 18px;
+                      color:#232323;
+                      font-size:15px;
+                      line-height:21px;
+                    "
+                  >
+                    You're ready to start enjoying TV programmes
+                    and films.
+                  </td>
+                </tr>
+
+                <!-- START WATCHING BUTTON -->
+
+                <tr>
+                  <td style="padding:0 0 18px;">
+                    <table
+                      role="presentation"
+                      width="100%"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      style="border-collapse:collapse;"
+                    >
+                      <tr>
+                        <td
+                          align="center"
+                          bgcolor="#e50914"
+                          style="border-radius:4px;"
+                        >
+                          <a
+                            href="{{START_WATCHING_URL}}"
+                            style="
+                              display:block;
+                              padding:14px 16px;
+                              border-radius:4px;
+                              background:#e50914;
+                              color:#ffffff;
+                              font-family:Arial, Helvetica, sans-serif;
+                              font-size:13px;
+                              line-height:18px;
+                              font-weight:700;
+                              text-align:center;
+                              text-decoration:none;
+                            "
+                          >
+                            Start Watching
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <!-- ACCOUNT INFORMATION CARD -->
+
+                <tr>
+                  <td style="padding:0 0 19px;">
+                    <table
+                      role="presentation"
+                      width="100%"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      style="
+                        width:100%;
+                        border-collapse:separate;
+                        border-spacing:0;
+                        border:1px solid #dddddd;
+                        border-radius:7px;
+                      "
+                    >
+                      <tr>
+                        <td style="padding:18px;">
+
+                          <table
+                            role="presentation"
+                            width="100%"
+                            cellspacing="0"
+                            cellpadding="0"
+                            border="0"
+                            style="border-collapse:collapse;"
+                          >
+                            <tr>
+                              <td
+                                style="
+                                  padding:0 0 20px;
+                                  color:#232323;
+                                  font-size:19px;
+                                  line-height:24px;
+                                  font-weight:400;
+                                "
+                              >
+                                Your Account Information:
+                              </td>
+                            </tr>
+
+                            <!-- EMAIL -->
+
+                            <tr>
+                              <td style="padding:0 0 18px;">
+                                <p
+                                  style="
+                                    margin:0 0 8px;
+                                    color:#232323;
+                                    font-size:13px;
+                                    line-height:17px;
+                                    font-weight:700;
+                                  "
+                                >
+                                  Email
+                                </p>
+
+                                <p
+                                  style="
+                                    margin:0;
+                                    color:#232323;
+                                    font-size:15px;
+                                    line-height:20px;
+                                  "
+                                >
+                                  <a
+                                    href="mailto:{{EMAIL}}"
+                                    style="
+                                      color:#005bd7;
+                                      text-decoration:underline;
+                                    "
+                                  >
+                                    {{EMAIL}}
+                                  </a>
+                                </p>
+                              </td>
+                            </tr>
+
+                            <!-- DISTRIBUTOR -->
+
+                            <tr>
+                              <td style="padding:0 0 18px;">
+                                <p
+                                  style="
+                                    margin:0 0 8px;
+                                    color:#232323;
+                                    font-size:13px;
+                                    line-height:17px;
+                                    font-weight:700;
+                                  "
+                                >
+                                  Distributor
+                                </p>
+
+                                <p
+                                  style="
+                                    margin:0;
+                                    color:#232323;
+                                    font-size:15px;
+                                    line-height:20px;
+                                  "
+                                >
+                                  Netflix Entertainment Services India LLP
+                                </p>
+                              </td>
+                            </tr>
+
+                            <!-- PLAN -->
+
+                            <tr>
+                              <td style="padding:0 0 18px;">
+                                <p
+                                  style="
+                                    margin:0 0 8px;
+                                    color:#232323;
+                                    font-size:13px;
+                                    line-height:17px;
+                                    font-weight:700;
+                                  "
+                                >
+                                  Plan
+                                </p>
+
+                                <p
+                                  style="
+                                    margin:0;
+                                    color:#232323;
+                                    font-size:15px;
+                                    line-height:20px;
+                                  "
+                                >
+                                  {{PLAN_NAME}}
+                                  <br>
+                                  {{PLAN_PRICE}}
+                                </p>
+                              </td>
+                            </tr>
+
+                            <!-- PAYMENT -->
+
+                            <tr>
+                              <td style="padding:0;">
+                                <p
+                                  style="
+                                    margin:0 0 8px;
+                                    color:#232323;
+                                    font-size:13px;
+                                    line-height:17px;
+                                    font-weight:700;
+                                  "
+                                >
+                                  Payment
+                                </p>
+
+                                <table
+                                  role="presentation"
+                                  cellspacing="0"
+                                  cellpadding="0"
+                                  border="0"
+                                  style="border-collapse:collapse;"
+                                >
+                                  <tr>
+                                    <td
+                                      valign="middle"
+                                      style="padding:0 9px 0 0;"
+                                    >
+                                      <div
+                                        style="
+                                          min-width:42px;
+                                          padding:5px 7px;
+                                          border:1px solid #dddddd;
+                                          border-radius:3px;
+                                          color:#1a1a1a;
+                                          font-size:10px;
+                                          font-weight:700;
+                                          text-align:center;
+                                        "
+                                      >
+                                        CARD
+                                      </div>
+                                    </td>
+
+                                    <td
+                                      valign="middle"
+                                      style="
+                                        color:#232323;
+                                        font-size:15px;
+                                        line-height:20px;
+                                      "
+                                    >
+                                      {{PAYMENT_METHOD}}
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <!-- HELP TEXT -->
+
+                <tr>
+                  <td
+                    style="
+                      padding:0 0 19px;
+                      color:#232323;
+                      font-size:15px;
+                      line-height:21px;
+                    "
+                  >
+                    We're here to help if you need it. Visit the
+                    <a
+                      href="{{HELP_URL}}"
+                      style="
+                        color:#232323;
+                        text-decoration:underline;
+                      "
+                    >
+                      Help Centre
+                    </a>
+                    for more info or
+                    <a
+                      href="{{CONTACT_URL}}"
+                      style="
+                        color:#232323;
+                        text-decoration:underline;
+                      "
+                    >
+                      contact us
+                    </a>.
+                  </td>
+                </tr>
+
+                <!-- TEAM TEXT -->
+
+                <tr>
+                  <td
+                    style="
+                      padding:0 0 26px;
+                      color:#232323;
+                      font-size:13px;
+                      line-height:18px;
+                      font-weight:600;
+                    "
+                  >
+                    The Netflix team
+                  </td>
+                </tr>
+
+                <!-- DIVIDER -->
+
+                <tr>
+                  <td
+                    style="
+                      padding:0 0 24px;
+                      border-top:1px solid #232323;
+                      font-size:1px;
+                      line-height:1px;
+                    "
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+
+                <!-- VIEW MOVIES BUTTON -->
+
+                <tr>
+                  <td style="padding:0 0 36px;">
+                    <table
+                      role="presentation"
+                      width="100%"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      style="border-collapse:collapse;"
+                    >
+                      <tr>
+                        <td
+                          align="center"
+                          style="
+                            border:1px solid #232323;
+                            border-radius:4px;
+                          "
+                        >
+                          <a
+                            href="{{MOVIES_URL}}"
+                            style="
+                              display:block;
+                              padding:13px 16px;
+                              background:#ffffff;
+                              color:#232323;
+                              font-family:Arial, Helvetica, sans-serif;
+                              font-size:13px;
+                              line-height:18px;
+                              font-weight:700;
+                              text-align:center;
+                              text-decoration:none;
+                            "
+                          >
+                            View all TV programmes &amp; films
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <!-- FOOTER -->
+
+                <tr>
+                  <td>
+                    <table
+                      role="presentation"
+                      width="100%"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      style="border-collapse:collapse;"
+                    >
+                      <tr>
+                        <td
+                          width="42"
+                          valign="top"
+                          style="
+                            width:42px;
+                            padding:0 18px 0 0;
+                          "
+                        >
+                          <img
+                            src="cid:netflix-logo"
+                            width="24"
+                            alt="Netflix"
+                            style="
+                              display:block;
+                              width:24px;
+                              height:auto;
+                              border:0;
+                              outline:none;
+                              text-decoration:none;
+                            "
+                          >
+                        </td>
+
+                        <td
+                          valign="top"
+                          style="
+                            color:#969696;
+                            font-size:12px;
+                            line-height:16px;
+                          "
+                        >
+                          <p
+                            style="
+                              margin:0 0 19px;
+                              color:#4a4a4a;
+                              font-size:14px;
+                              line-height:19px;
+                            "
+                          >
+                            By joining Netflix, you've agreed to our
+                            <a
+                              href="{{TERMS_URL}}"
+                              style="
+                                color:#4a4a4a;
+                                text-decoration:underline;
+                              "
+                            >
+                              Terms of Use
+                            </a>
+                            and
+                            <a
+                              href="{{PRIVACY_URL}}"
+                              style="
+                                color:#4a4a4a;
+                                text-decoration:underline;
+                              "
+                            >
+                              Privacy Statement
+                            </a>.
+                          </p>
+
+                          <p
+                            style="
+                              margin:0 0 19px;
+                              color:#4a4a4a;
+                              font-size:14px;
+                              line-height:19px;
+                            "
+                          >
+                            Please review the
+                            <a
+                              href="{{PRIVACY_URL}}"
+                              style="
+                                color:#4a4a4a;
+                                text-decoration:underline;
+                              "
+                            >
+                              Privacy Statement
+                            </a>
+                            to learn how we use your personal information.
+                          </p>
+
+                          <p
+                            style="
+                              margin:0 0 2px;
+                              color:#969696;
+                              font-size:12px;
+                              line-height:16px;
+                            "
+                          >
+                            Questions? Call 000-800-919-1694
+                          </p>
+
+                          <p
+                            style="
+                              margin:0 0 18px;
+                              color:#969696;
+                              font-size:10px;
+                              line-height:14px;
+                            "
+                          >
+                            Netflix Entertainment Services India LLP
+                          </p>
+
+                          <p style="margin:0 0 5px;">
+                            <a
+                              href="{{NOTIFICATION_URL}}"
+                              style="
+                                color:#969696;
+                                font-size:11px;
+                                text-decoration:underline;
+                              "
+                            >
+                              Notification Settings
+                            </a>
+                          </p>
+
+                          <p style="margin:0 0 5px;">
+                            <a
+                              href="{{TERMS_URL}}"
+                              style="
+                                color:#969696;
+                                font-size:11px;
+                                text-decoration:underline;
+                              "
+                            >
+                              Terms of Use
+                            </a>
+                          </p>
+
+                          <p style="margin:0 0 5px;">
+                            <a
+                              href="{{PRIVACY_URL}}"
+                              style="
+                                color:#969696;
+                                font-size:11px;
+                                text-decoration:underline;
+                              "
+                            >
+                              Privacy
+                            </a>
+                          </p>
+
+                          <p style="margin:0 0 22px;">
+                            <a
+                              href="{{HELP_URL}}"
+                              style="
+                                color:#969696;
+                                font-size:11px;
+                                text-decoration:underline;
+                              "
+                            >
+                              Help Centre
+                            </a>
+                          </p>
+
+                          <p
+                            style="
+                              margin:0;
+                              color:#969696;
+                              font-size:9px;
+                              line-height:13px;
+                            "
+                          >
+                            This message was emailed to
+                            [{{EMAIL}}] by Netflix as part of your
+                            Netflix membership.
+                          </p>
+
+                          <p
+                            style="
+                              margin:2px 0 0;
+                              color:#969696;
+                              font-size:9px;
+                              line-height:13px;
+                              word-break:break-word;
+                            "
+                          >
+                            SRC: {{EMAIL_REFERENCE}}
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

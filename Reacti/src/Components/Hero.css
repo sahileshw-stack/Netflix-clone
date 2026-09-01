@@ -1,0 +1,240 @@
+.form-floating .form-control:-webkit-autofill,
+.form-floating .form-control:-webkit-autofill:hover,
+.form-floating .form-control:-webkit-autofill:focus,
+.form-floating .form-control:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px rgba(22,22,22,0.8) inset !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 9999s ease-in-out 0s;
+}
+
+
+.hero{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    text-align: center;
+
+    width: 100%;
+    max-width: 900px;
+    z-index: 10;
+}
+
+.h{
+    width: 650px;
+    max-width: 100%;
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 60px;
+    font-family: "Inter", sans-serif;
+}
+
+.ht{
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.hero p{
+    font-size: 18px;
+}
+
+.hero-input{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    margin-top:25px;
+}
+
+.hero-input input{
+    width: 350px;
+    padding: 18px;
+    background: rgba(22,22,22,.7);
+    border: 1px solid rgba(255,255,255,.4);
+    border-radius: 4px;
+    color: white;
+}
+
+.hero-input button{
+    padding: 10px 28px;
+    background: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero-input button:hover{
+    background: #c11119;
+}
+
+.mem{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form-floating label{
+    color: rgba(255,255,255,.7) !important;
+}
+
+.form-floating .form-control{
+    background: rgba(22,22,22,.7) !important;
+    color: white !important;
+    border: 1px solid rgba(255,255,255,.4) !important;
+}
+
+.form-floating .form-control:focus{
+    background: rgba(22,22,22,.7) !important;
+    color: white !important;
+    border-color: white !important;
+    box-shadow: none !important;
+}.netflix-toast {
+    background: #181818 !important;
+    color: #ffffff !important;
+
+    border-left: 4px solid #e50914;
+    border-radius: 8px !important;
+
+    min-height: 64px;
+    padding: 14px 16px !important;
+
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+
+    font-family: "Netflix Sans", "Helvetica Neue", Arial, sans-serif;
+}
+.Toastify__toast-body {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+}
+.Toastify__close-button {
+    color: #ffffff !important;
+    opacity: 0.8 !important;
+}
+
+.Toastify__close-button:hover {
+    opacity: 1 !important;
+}  
+.Toastify__progress-bar {
+    background: #e50914 !important;
+}
+.Toastify__toast-icon svg{
+    fill: #e50914 !important;
+}
+.Toastify__toast {
+    animation-duration: 0.3s;
+}
+
+.input-box{
+    display:flex;
+    flex-direction:column;
+    width:350px;
+}
+
+.email-error{
+    margin-top:6px;
+    margin-left:2px;
+    color:#e50914;
+    font-size:14px;
+    font-weight:500;
+    text-align:left;
+}
+.hero-form {
+    margin-top: 25px;
+}
+
+.hero-input-row {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.hero-input-row .form-floating {
+    width: 440px;
+}
+
+.hero-input-row input {
+    width: 100%;
+    height: 72px;
+
+    padding: 18px;
+
+    background: rgba(22, 22, 22, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+
+    color: white;
+}
+
+.hero-input-row button {
+    height: 57px;
+    padding: 0 36px;
+
+    background: #e50914;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 26px;
+    font-weight: 700;
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+.hero-input-row button:hover {
+    background: #c11119;
+}
+
+.email-error {
+    margin: 5px 0 0 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(235, 57, 66);
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    gap: 50px;
+}
+.email-error i{
+    padding-right: 20px;
+}
+
+
+.input-error {
+    border-color: #eb3942 !important;
+}
+.hero-input button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero-input button:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+
+
+@keyframes button-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

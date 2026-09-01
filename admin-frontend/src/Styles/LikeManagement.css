@@ -1,0 +1,557 @@
+.like-management-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.like-management-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.like-management-eyebrow {
+  margin: 0 0 7px;
+
+  color: #e50914;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.like-management-heading h1 {
+  margin: 0 0 8px;
+
+  font-size: 29px;
+}
+
+.like-management-heading
+  > div:first-child
+  > p:last-child {
+  margin: 0;
+
+  color: #787878;
+  font-size: 13px;
+}
+
+.like-management-summary-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(3, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.like-management-summary-grid article {
+  min-width: 170px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+
+  background: #131313;
+}
+
+.like-summary-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+}
+
+.like-summary-icon.like-icon {
+  background: rgba(49, 130, 255, 0.12);
+  color: #6ba3ff;
+}
+
+.like-summary-icon.love-icon {
+  background: rgba(168, 107, 255, 0.12);
+  color: #b684ff;
+}
+
+.like-summary-icon.dislike-icon {
+  background: rgba(229, 9, 20, 0.12);
+  color: #ff626a;
+}
+
+.like-management-summary-grid article > div:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.like-management-summary-grid span {
+  margin-bottom: 4px;
+
+  color: #737373;
+  font-size: 9px;
+}
+
+.like-management-summary-grid strong {
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.like-management-panel {
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 13px;
+
+  background: #131313;
+}
+
+.like-management-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  padding: 19px 21px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.like-management-search {
+  width: min(420px, 100%);
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 7px;
+
+  background: #1a1a1a;
+  color: #686868;
+}
+
+.like-management-search:focus-within {
+  border-color: rgba(229, 9, 20, 0.7);
+}
+
+.like-management-search input {
+  min-width: 0;
+  flex: 1;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+  color: #ffffff;
+
+  font-size: 12px;
+}
+
+.like-management-filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.like-management-filters select {
+  height: 42px;
+
+  padding: 0 13px;
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 7px;
+  outline: none;
+
+  background: #1a1a1a;
+  color: #c6c6c6;
+
+  font-size: 11px;
+}
+
+.like-management-filters option {
+  background: #181818;
+}
+
+.like-management-table-wrapper {
+  overflow-x: auto;
+}
+
+.like-management-table {
+  width: 100%;
+  min-width: 1050px;
+
+  border-collapse: collapse;
+}
+
+.like-management-table th,
+.like-management-table td {
+  padding: 15px 18px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+  text-align: left;
+}
+
+.like-management-table th {
+  color: #666666;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.like-management-table td {
+  color: #bbbbbb;
+  font-size: 11px;
+}
+
+.like-management-table tbody tr {
+  transition: background 0.18s ease;
+}
+
+.like-management-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.like-management-user,
+.like-management-movie {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.like-management-avatar {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e50914,
+      #7c050b
+    );
+
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.like-management-user strong,
+.like-management-movie strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #ffffff;
+  font-size: 11px;
+}
+
+.like-management-user span {
+  color: #5e5e5e;
+  font-size: 9px;
+}
+
+.like-management-profile {
+  display: inline-flex;
+
+  padding: 5px 9px;
+
+  border-radius: 999px;
+
+  background: rgba(49, 130, 255, 0.1);
+  color: #6ba3ff;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.like-management-poster {
+  width: 48px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #30113f,
+      #141414
+    );
+
+  color: #b684ff;
+}
+
+.like-management-reaction {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 6px 10px;
+
+  border-radius: 999px;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.like-management-reaction.like {
+  background: rgba(49, 130, 255, 0.11);
+  color: #6ba3ff;
+}
+
+.like-management-reaction.love {
+  background: rgba(168, 107, 255, 0.11);
+  color: #b684ff;
+}
+
+.like-management-reaction.dislike {
+  background: rgba(229, 9, 20, 0.11);
+  color: #ff626a;
+}
+
+.like-management-double {
+  position: relative;
+
+  display: inline-block;
+
+  width: 18px;
+  height: 17px;
+}
+
+.like-management-double svg:first-child {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 11px;
+  height: 11px;
+}
+
+.like-management-double svg:last-child {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  width: 11px;
+  height: 11px;
+}
+
+.like-management-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.like-management-actions button {
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.045);
+  color: #888888;
+
+  font-size: 11px;
+  cursor: pointer;
+
+  transition:
+    transform 0.18s ease,
+    background 0.18s ease,
+    color 0.18s ease;
+}
+
+.like-management-actions button:hover {
+  transform: translateY(-2px);
+}
+
+.like-management-view:hover {
+  background: rgba(49, 130, 255, 0.14) !important;
+  color: #6ba3ff !important;
+}
+
+.like-management-delete:hover {
+  background: rgba(229, 9, 20, 0.14) !important;
+  color: #ff626a !important;
+}
+
+.like-management-empty {
+  padding: 40px !important;
+
+  color: #666666 !important;
+  text-align: center !important;
+}
+
+.like-management-footer {
+  min-height: 68px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+
+  padding: 0 21px;
+}
+
+.like-management-footer p {
+  margin: 0;
+
+  color: #656565;
+  font-size: 10px;
+}
+
+.like-management-pagination {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.like-management-pagination button {
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+
+  background: #181818;
+  color: #888888;
+
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.like-management-pagination button:hover,
+.like-management-pagination button.active {
+  border-color: #e50914;
+  background: #e50914;
+  color: #ffffff;
+}
+
+@media (max-width: 1100px) {
+  .like-management-heading {
+    flex-direction: column;
+  }
+
+  .like-management-summary-grid {
+    width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .like-management-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .like-management-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .like-management-search {
+    width: 100%;
+  }
+
+  .like-management-filters {
+    flex-direction: column;
+  }
+
+  .like-management-filters select {
+    width: 100%;
+  }
+
+  .like-management-footer {
+    min-height: auto;
+
+    align-items: flex-start;
+    flex-direction: column;
+
+    padding: 17px;
+  }
+}
+
+.like-delete-confirm {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.like-delete-confirm strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 17px;
+}
+
+.like-delete-confirm p {
+  margin: 0 0 18px;
+  color: #aaa;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.like-delete-confirm p b {
+  color: #fff;
+}
+
+.like-confirm-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.like-confirm-actions button {
+  padding: 9px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.like-confirm-cancel {
+  background: #292929;
+  color: #fff;
+}
+
+.like-confirm-delete {
+  background: #e50914;
+  color: #fff;
+}
+
+.like-confirm-cancel:hover {
+  background: #3a3a3a;
+}
+
+.like-confirm-delete:hover {
+  background: #f6121d;
+}

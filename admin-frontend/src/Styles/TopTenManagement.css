@@ -1,0 +1,694 @@
+.topten-management-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.topten-management-top h1 {
+  margin: 0 0 8px;
+
+  font-size: 29px;
+}
+
+.topten-management-top p {
+  margin: 0;
+
+  color: #777777;
+  font-size: 13px;
+}
+
+.topten-management-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 16px;
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+  color: #818181;
+
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.topten-management-back:hover {
+  color: #ffffff;
+}
+
+.topten-management-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.2fr)
+    minmax(350px, 0.8fr);
+
+  gap: 20px;
+}
+
+.topten-management-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.topten-management-card,
+.topten-preview-card,
+.topten-current-section {
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.07);
+
+  border-radius: 13px;
+
+  background: #131313;
+}
+
+.topten-management-card-heading {
+  min-height: 80px;
+
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  padding: 18px 22px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.06);
+}
+
+.topten-management-card-heading
+  > span {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background:
+    rgba(229, 9, 20, 0.12);
+
+  color: #e50914;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.topten-management-card-heading h2 {
+  margin: 0 0 5px;
+
+  font-size: 16px;
+}
+
+.topten-management-card-heading p {
+  margin: 0;
+
+  color: #6f6f6f;
+
+  font-size: 10px;
+}
+
+.topten-management-fields {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 16px;
+
+  padding: 22px;
+}
+
+.topten-management-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.topten-management-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.topten-management-field label {
+  color: #cfcfcf;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.topten-management-field input,
+.topten-management-field select,
+.topten-management-field textarea {
+  width: 100%;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.09);
+
+  border-radius: 7px;
+  outline: none;
+
+  background: #191919;
+  color: #ffffff;
+
+  font-size: 11px;
+}
+
+.topten-management-field input,
+.topten-management-field select {
+  height: 43px;
+
+  padding: 0 13px;
+}
+
+.topten-management-field textarea {
+  min-height: 105px;
+
+  padding: 13px;
+
+  resize: vertical;
+}
+
+.topten-management-field select option {
+  background: #191919;
+}
+
+.topten-management-field input:focus,
+.topten-management-field select:focus,
+.topten-management-field textarea:focus {
+  border-color:
+    rgba(229, 9, 20, 0.7);
+}
+
+.topten-management-media-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 15px;
+
+  padding: 22px;
+}
+
+.topten-management-upload {
+  padding: 20px;
+
+  border:
+    1px dashed
+    rgba(255, 255, 255, 0.14);
+
+  border-radius: 10px;
+
+  background: #171717;
+}
+
+.topten-management-upload > svg {
+  margin-bottom: 14px;
+
+  color: #e50914;
+
+  font-size: 22px;
+}
+
+.topten-management-upload h3 {
+  margin: 0 0 7px;
+
+  font-size: 13px;
+}
+
+.topten-management-upload p {
+  min-height: 32px;
+
+  margin: 0 0 14px;
+
+  color: #6d6d6d;
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.topten-management-upload input {
+  width: 100%;
+
+  padding: 9px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.09);
+
+  border-radius: 7px;
+
+  background: #1a1a1a;
+  color: #bcbcbc;
+
+  font-size: 9px;
+}
+
+.topten-management-upload span {
+  display: block;
+
+  margin-top: 9px;
+
+  color: #6edc91;
+
+  font-size: 9px;
+}
+
+.topten-management-add-button {
+  min-height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #e50914;
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.topten-management-add-button:hover {
+  background: #f6121d;
+}
+
+.topten-preview-card {
+  align-self: start;
+
+  position: sticky;
+  top: 105px;
+}
+
+.topten-preview-heading {
+  padding: 19px 20px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.06);
+}
+
+.topten-preview-heading span {
+  color: #e50914;
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.topten-preview-heading h2 {
+  margin: 6px 0 0;
+
+  font-size: 16px;
+}
+
+.topten-preview-area {
+  padding: 25px;
+}
+
+.topten-preview-item {
+  position: relative;
+
+  min-height: 210px;
+
+  display: flex;
+  align-items: flex-end;
+
+  padding-left: 85px;
+}
+
+.topten-preview-number {
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+  z-index: 1;
+
+  font-size: 205px;
+  font-weight: 900;
+  line-height: 0.85;
+
+  color: #000000;
+
+  -webkit-text-stroke:
+    4px #6f6f6f;
+
+  user-select: none;
+}
+
+.topten-preview-poster {
+  position: relative;
+  z-index: 2;
+
+  width: 250px;
+  height: 150px;
+
+  overflow: hidden;
+
+  border-radius: 7px;
+
+  background: #222222;
+}
+
+.topten-preview-poster img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.topten-poster-placeholder {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #606060;
+
+  font-size: 11px;
+}
+
+.topten-hover-preview {
+  width: 92%;
+
+  margin: 22px auto 0;
+
+  overflow: hidden;
+
+  border-radius: 9px;
+
+  background: #181818;
+
+  box-shadow:
+    0 15px 35px
+    rgba(0, 0, 0, 0.6);
+}
+
+.topten-hover-media {
+  height: 145px;
+
+  background: #222222;
+}
+
+.topten-hover-media img,
+.topten-hover-media video {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.topten-hover-media > div {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #555555;
+}
+
+.topten-hover-content {
+  padding: 14px;
+}
+
+.topten-hover-content > p {
+  margin: 0 0 9px;
+
+  color: #ffffff;
+
+  font-size: 10px;
+}
+
+.topten-hover-content > p span {
+  color: #63d989;
+}
+
+.topten-hover-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #bcbcbc;
+
+  font-size: 9px;
+}
+
+.topten-rating {
+  padding: 3px 5px;
+
+  border: 1px solid #777777;
+}
+
+.topten-hover-actions {
+  display: flex;
+  gap: 7px;
+
+  margin-top: 14px;
+}
+
+.topten-hover-actions button {
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.45);
+
+  border-radius: 50%;
+
+  background: #292929;
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
+.topten-hover-actions
+  button:first-child {
+  border-color: #ffffff;
+
+  background: #ffffff;
+  color: #111111;
+}
+
+.topten-info-button {
+  margin-left: auto;
+}
+
+.topten-current-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 22px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.06);
+}
+
+.topten-current-heading span {
+  color: #e50914;
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.topten-current-heading h2 {
+  margin: 6px 0 0;
+
+  font-size: 17px;
+}
+
+.topten-current-heading strong {
+  color: #777777;
+
+  font-size: 11px;
+}
+
+.topten-empty {
+  padding: 50px;
+
+  color: #616161;
+
+  text-align: center;
+
+  font-size: 12px;
+}
+
+.topten-current-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 17px;
+
+  padding: 22px;
+}
+
+.topten-current-card {
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.07);
+
+  border-radius: 9px;
+
+  background: #181818;
+}
+
+.topten-current-visual {
+  position: relative;
+
+  height: 135px;
+
+  display: flex;
+  align-items: flex-end;
+
+  padding-left: 48px;
+
+  overflow: hidden;
+}
+
+.topten-current-visual > span {
+  position: absolute;
+  left: 3px;
+  bottom: -8px;
+  z-index: 1;
+
+  font-size: 115px;
+  font-weight: 900;
+  line-height: 0.9;
+
+  color: #000000;
+
+  -webkit-text-stroke:
+    2px #626262;
+}
+
+.topten-current-visual > div {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  height: 105px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #222222;
+
+  color: #555555;
+}
+
+.topten-current-visual img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.topten-current-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  padding: 12px;
+}
+
+.topten-current-content h3 {
+  margin: 0 0 5px;
+
+  font-size: 11px;
+}
+
+.topten-current-content p {
+  margin: 0;
+
+  color: #737373;
+
+  font-size: 9px;
+}
+
+.topten-current-content button {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 6px;
+
+  background:
+    rgba(229, 9, 20, 0.1);
+
+  color: #ff626a;
+
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .topten-management-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .topten-preview-card {
+    position: static;
+  }
+
+  .topten-current-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .topten-management-fields,
+  .topten-management-media-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topten-management-field.full-width {
+    grid-column: auto;
+  }
+
+  .topten-current-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topten-preview-number {
+    font-size: 160px;
+  }
+
+  .topten-preview-item {
+    padding-left: 65px;
+  }
+}

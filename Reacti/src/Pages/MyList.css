@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+
+.mylist-page {
+  min-height: 100vh;
+  background: #141414;
+  color: #ffffff;
+}
+
+.mylist-main {
+  padding: 120px 4% 60px;
+}
+
+.mylist-main h1 {
+  margin: 0 0 35px;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.mylist-loading {
+  min-height: 320px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mylist-loader {
+  width: 48px;
+  height: 48px;
+
+  border: 4px solid #3d3d3d;
+  border-top-color: #e50914;
+  border-radius: 50%;
+
+  animation: mylist-page-spin 0.8s linear infinite;
+}
+
+.mylist-loading p {
+  margin-top: 16px;
+  color: #b3b3b3;
+  font-size: 16px;
+}
+
+.mylist-error {
+  color: #e50914;
+  font-size: 16px;
+}
+
+.mylist-empty {
+  min-height: 320px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.mylist-empty h2 {
+  margin: 0 0 12px;
+  font-size: 28px;
+}
+
+.mylist-empty p {
+  margin: 0;
+  color: #b3b3b3;
+  font-size: 16px;
+}
+
+.mylist-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px 18px;
+}
+
+.mylist-card {
+  position: relative;
+
+  min-height: 165px;
+  border-radius: 6px;
+  overflow: hidden;
+
+  background: #222222;
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.mylist-card:hover {
+  transform: scale(1.05);
+  z-index: 3;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+}
+
+.mylist-image {
+  width: 100%;
+  height: 100%;
+  min-height: 165px;
+
+  display: block;
+  object-fit: cover;
+}
+
+.mylist-card-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 18px;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.95) 0%,
+      rgba(0, 0, 0, 0.55) 45%,
+      transparent 75%
+    );
+
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.mylist-card:hover .mylist-card-overlay {
+  opacity: 1;
+}
+
+.mylist-card-overlay h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.mylist-card-overlay p {
+  margin: 0 0 14px;
+  color: #d2d2d2;
+  font-size: 14px;
+}
+
+.mylist-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mylist-actions button {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+
+  background: rgba(20, 20, 20, 0.72);
+  color: #ffffff;
+
+  font-size: 14px;
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mylist-actions button:hover {
+  background: #ffffff;
+  color: #141414;
+  border-color: #ffffff;
+  transform: scale(1.08);
+}
+
+.mylist-play {
+  background: #ffffff !important;
+  color: #141414 !important;
+  border-color: #ffffff !important;
+}
+
+@keyframes mylist-page-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1100px) {
+  .mylist-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .mylist-main {
+    padding: 100px 20px 40px;
+  }
+
+  .mylist-main h1 {
+    font-size: 30px;
+  }
+
+  .mylist-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mylist-grid {
+    grid-template-columns: 1fr;
+  }
+}

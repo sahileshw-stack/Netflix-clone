@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+}
+
+.upi-payment-page {
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.upi-header {
+  width: 100%;
+  height: 105px;
+  padding: 0 11.5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #dddddd;
+}
+
+.upi-logo {
+  width: 170px;
+  height: auto;
+}
+
+.upi-signout {
+  border: none;
+  background: transparent;
+
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.upi-signout:hover {
+  text-decoration: underline;
+}
+
+.upi-main {
+  display: flex;
+  justify-content: center;
+  padding: 70px 20px 100px;
+}
+
+.upi-container {
+  width: 480px;
+}
+
+.upi-container h1 {
+  margin: 0 0 25px;
+
+  font-size: 38px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.upi-description {
+  margin: 0 0 28px;
+
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.upi-qr-card {
+  width: 100%;
+  min-height: 370px;
+  padding: 35px 25px 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: #ffffff;
+}
+
+.upi-apps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  margin-bottom: 40px;
+}
+
+.upi-apps span {
+  width: 58px;
+  height: 27px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.upi-apps img {
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+}
+
+.payment-qr {
+  width: 185px;
+  height: 185px;
+  object-fit: contain;
+}
+
+.unable-text {
+  margin: 30px 0 0;
+
+  font-size: 17px;
+}
+
+.unable-text button {
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #000000;
+  font-size: 17px;
+  text-decoration: underline;
+
+  cursor: pointer;
+}
+
+.payment-timer {
+  margin-top: 28px;
+  text-align: center;
+
+  font-size: 16px;
+}
+
+.payment-timer strong {
+  font-weight: 700;
+}
+
+.expired-box {
+  margin-top: 28px;
+  text-align: center;
+}
+
+.expired-box p {
+  margin-bottom: 12px;
+  color: #e50914;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.expired-box button {
+  padding: 11px 18px;
+
+  border: none;
+  border-radius: 4px;
+
+  background-color: #e50914;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.expired-box button:hover {
+  background-color: #f6121d;
+}
+
+@media (max-width: 575px) {
+  .upi-header {
+    height: 80px;
+    padding: 0 20px;
+  }
+
+  .upi-logo {
+    width: 125px;
+  }
+
+  .upi-main {
+    padding: 45px 20px 70px;
+  }
+
+  .upi-container {
+    width: 100%;
+  }
+
+  .upi-container h1 {
+    font-size: 30px;
+  }
+
+  .upi-description {
+    font-size: 16px;
+  }
+
+  .upi-qr-card {
+    min-height: 350px;
+  }
+}

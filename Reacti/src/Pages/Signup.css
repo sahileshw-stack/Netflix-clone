@@ -1,0 +1,129 @@
+.signup-page{
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top, rgba(120,20,20,0.45), transparent 55%),
+        linear-gradient(to bottom, #4a1111 0%, #210707 45%, #000000 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Same logo */
+.logo-side{
+    width: 150px;
+    margin: 30px 140px 10px 140px;
+}
+
+.line{
+    border: 1px solid rgb(189,176,176);
+}
+
+/* Same form */
+.Signup-form{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 1px;
+}
+
+.Signup-form h1{
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.Signup-form h2{
+    font-size: 1.125rem;
+    color: rgba(255,255,255,.7);
+    font-weight: 400;
+}
+
+/* Same floating inputs */
+.input-box{
+    position: relative;
+    margin-top: 25px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 64px;
+    padding: 22px 16px 8px;
+    background: rgba(22,22,22,.8);
+    border: 1px solid rgba(255,255,255,.4);
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-box input:focus{
+    border-color: white;
+    box-shadow: none;
+}
+
+.input-box label{
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255,255,255,.7);
+    transition: .2s;
+    pointer-events: none;
+}
+
+.input-box input:focus + label,
+.input-box input:not(:placeholder-shown) + label{
+    top: 14px;
+    font-size: 12px;
+}
+
+/* Same autofill */
+.input-box input:-webkit-autofill,
+.input-box input:-webkit-autofill:hover,
+.input-box input:-webkit-autofill:focus,
+.input-box input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 1000px rgba(22,22,22,.8) inset !important;
+    -webkit-text-fill-color: white !important;
+}
+
+/* Same button */
+.Sign-btn{
+    width: 100%;
+    margin-top: 20px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    background: #e50914;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.Sign-btn:hover{
+    background: #c11119;
+}
+
+/* Bottom text */
+.back{
+    margin-top: 12px;
+    color: rgba(255,255,255,.6);
+    font-size: 15px;
+}
+
+.Signup-form a{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.Signup-form a:hover{
+    text-decoration: underline;
+}
+.errors{
+    color: red !important;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 2px 0px 0px 0px;
+}
+
