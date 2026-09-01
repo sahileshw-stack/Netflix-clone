@@ -1,0 +1,268 @@
+.navbar{
+    width:100%;
+    height:70px;
+    padding:25px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:linear-gradient(to bottom,rgba(0,0,0,.9),transparent);
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:40px;
+}
+
+.logo{
+    width:100px;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
+    margin: 0;
+}
+
+.nav-links li a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 18px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 50px;
+    transition: all .3s ease;
+    opacity: 50%;
+}
+
+.nav-links li a:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1); 
+    opacity: 100%;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.icon{
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.avatar{
+    width:38px;
+    height:38px;
+    border-radius:5px;
+    cursor:pointer;
+}
+/* ================================
+   PROFILE AREA
+================================ */
+
+.profile-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.profile-trigger {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  display: block;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.profile-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 11px;
+  transition: transform 0.2s ease;
+}
+
+.profile-arrow.open {
+  transform: rotate(180deg);
+}
+
+
+/* ================================
+   DROPDOWN BOX
+================================ */
+
+.profile-dropdown {
+  width: 285px;
+  position: absolute;
+  top: 54px;
+  right: 0;
+  padding: 9px 0 0;
+  color: #ffffff;
+  background: rgba(24, 24, 24, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 5px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.72);
+  z-index: 5000;
+  animation: profileDropdownOpen 0.16s ease;
+}
+
+.dropdown-arrow {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -9px;
+  right: 17px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 9px solid rgba(24, 24, 24, 0.98);
+}
+
+
+/* ================================
+   USER PROFILE ROW
+================================ */
+
+.dropdown-profile {
+  min-height: 57px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 17px 9px;
+}
+
+.dropdown-profile img {
+  width: 38px;
+  height: 38px;
+  display: block;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.dropdown-profile span {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+
+/* ================================
+   DROPDOWN ITEMS
+================================ */
+
+.dropdown-item {
+  width: 100%;
+  min-height: 61px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 11px 18px;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.16s ease;
+}
+
+.dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.07);
+  width: 97%;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.dropdown-item i {
+  width: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  color: #b3b3b3;
+  font-size: 25px;
+}
+
+.dropdown-item span {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+
+/* ================================
+   DIVIDER
+================================ */
+
+.dropdown-divider {
+  width: 100%;
+  height: 1px;
+  margin-top: 4px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+
+/* ================================
+   SIGN OUT
+================================ */
+
+.dropdown-signout {
+  width: 100%;
+  min-height: 61px;
+  display: flex;
+  align-items: center;
+  padding: 13px 18px;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  border-radius: 0 0 5px 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  gap:10px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.16s ease;
+}
+
+.dropdown-signout:hover {
+  background:#E50914;
+  color: white;
+}
+
+
+/* ================================
+   ANIMATION
+================================ */
+
+@keyframes profileDropdownOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

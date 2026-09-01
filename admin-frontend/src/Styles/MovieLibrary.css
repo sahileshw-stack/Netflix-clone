@@ -1,0 +1,313 @@
+.movie-library-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #080808;
+  color: #ffffff;
+}
+
+.movie-library-back {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 35px;
+
+  border: none;
+  background: transparent;
+  color: #9d9d9d;
+
+  font-size: 14px;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.movie-library-back:hover {
+  color: #ffffff;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.movie-library-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+.movie-library-label {
+  margin-bottom: 8px;
+
+  color: #e50914;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.movie-library-heading h1 {
+  margin: 0 0 10px;
+
+  font-size: 36px;
+}
+
+.movie-library-heading > div > p:last-child {
+  margin: 0;
+  color: #888;
+}
+
+
+/* =========================
+   TOTAL
+========================= */
+
+.movie-library-total {
+  min-width: 150px;
+
+  padding: 18px 25px;
+
+  border: 1px solid #252525;
+  border-radius: 14px;
+
+  background: #111111;
+
+  text-align: right;
+}
+
+.movie-library-total span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #888;
+  font-size: 12px;
+}
+
+.movie-library-total strong {
+  color: #ffffff;
+
+  font-size: 30px;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.movie-library-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.movie-library-card {
+  position: relative;
+
+  min-height: 250px;
+
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #242424;
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #151515,
+      #0d0d0d
+    );
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.movie-library-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #3c3c3c;
+
+  box-shadow:
+    0 18px 40px
+    rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================
+   CARD TOP
+========================= */
+
+.movie-library-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 28px;
+}
+
+.movie-library-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: rgba(229, 9, 20, 0.12);
+  color: #e50914;
+
+  font-size: 20px;
+}
+
+.movie-library-count {
+  min-width: 42px;
+  height: 42px;
+
+  padding: 0 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #202020;
+
+  color: #ffffff;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.movie-library-content {
+  flex: 1;
+}
+
+.movie-library-content > span {
+  color: #666;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.movie-library-content h2 {
+  margin: 8px 0 10px;
+
+  font-size: 20px;
+}
+
+.movie-library-content p {
+  margin: 0;
+
+  color: #888;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.movie-library-open {
+  width: 100%;
+
+  margin-top: 25px;
+  padding: 12px 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1px solid #292929;
+  border-radius: 9px;
+
+  background: #181818;
+  color: #dddddd;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.movie-library-open:hover {
+  border-color: #e50914;
+
+  background: #e50914;
+  color: #ffffff;
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.movie-library-error {
+  margin-bottom: 20px;
+  padding: 12px 15px;
+
+  border-radius: 8px;
+
+  background: rgba(229, 9, 20, 0.12);
+  color: #ff626a;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+  .movie-library-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .movie-library-page {
+    padding: 25px 18px;
+  }
+
+  .movie-library-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .movie-library-total {
+    width: 100%;
+    text-align: left;
+  }
+
+  .movie-library-grid {
+    grid-template-columns: 1fr;
+  }
+}

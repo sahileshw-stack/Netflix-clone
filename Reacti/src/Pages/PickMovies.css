@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
+.pick-page {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pick-header {
+  height: 105px;
+  padding: 0 7.5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #dddddd;
+}
+
+.pick-logo {
+  width: 185px;
+}
+
+.pick-help {
+  border: none;
+  background: transparent;
+
+  color: #222222;
+  font-size: 20px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.pick-help:hover {
+  text-decoration: underline;
+}
+
+.pick-main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 32px 25px 55px;
+
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 85px;
+  align-items: start;
+}
+
+.pick-intro h1 {
+  margin: 0 0 18px;
+
+  font-size: 45px;
+  line-height: 1.25;
+  color: #333333;
+}
+
+.pick-intro p {
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.pick-content {
+  width: 100%;
+}
+
+.pick-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.pick-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+
+  padding: 0;
+  border: 3px solid transparent;
+  border-radius: 5px;
+
+  background: transparent;
+  overflow: hidden;
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.pick-card:hover {
+  transform: scale(1.04);
+}
+
+.pick-card img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: cover;
+}
+
+.pick-card-selected {
+  border-color: #e50914;
+}
+
+.pick-card-selected::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.pick-check {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #e50914;
+  color: white;
+
+  font-size: 14px;
+}
+
+.pick-continue {
+  width: 320px;
+  height: 55px;
+
+  display: block;
+  margin: 12px 0 0 auto;
+
+  border: none;
+  border-radius: 3px;
+
+  background: #dddddd;
+  color: #555555;
+
+  font-size: 18px;
+  cursor: not-allowed;
+}
+
+.pick-continue-active {
+  background: #e50914;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.pick-continue-active:hover {
+  background: #f6121d;
+}
+
+@media (max-width: 1000px) {
+  .pick-main {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 720px;
+  }
+
+  .pick-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .pick-header {
+    height: 80px;
+    padding: 0 20px;
+  }
+
+  .pick-logo {
+    width: 130px;
+  }
+
+  .pick-main {
+    padding: 30px 20px 50px;
+  }
+
+  .pick-intro h1 {
+    font-size: 31px;
+  }
+
+  .pick-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 9px;
+  }
+
+  .pick-continue {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

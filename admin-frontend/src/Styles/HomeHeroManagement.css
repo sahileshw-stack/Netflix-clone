@@ -1,0 +1,584 @@
+.hero-management-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero-management-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.hero-management-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 16px;
+  padding: 0;
+
+  border: none;
+  background: transparent;
+  color: #818181;
+
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.hero-management-back:hover {
+  color: #ffffff;
+}
+
+.hero-management-top h1 {
+  margin: 0 0 8px;
+
+  font-size: 29px;
+}
+
+.hero-management-top p {
+  margin: 0;
+
+  color: #777777;
+  font-size: 13px;
+}
+
+.hero-management-save {
+  min-height: 44px;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 0 18px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #e50914;
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero-management-save:hover {
+  background: #f6121d;
+}
+
+.hero-management-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.2fr)
+    minmax(360px, 0.8fr);
+
+  gap: 20px;
+}
+
+.hero-management-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-management-card,
+.hero-management-preview-card {
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 13px;
+
+  background: #131313;
+}
+
+.hero-management-card-heading {
+  min-height: 80px;
+
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  padding: 18px 22px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.hero-management-card-heading > span {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: rgba(229, 9, 20, 0.12);
+  color: #e50914;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.hero-management-card-heading h2 {
+  margin: 0 0 5px;
+
+  font-size: 16px;
+}
+
+.hero-management-card-heading p {
+  margin: 0;
+
+  color: #6f6f6f;
+  font-size: 10px;
+}
+
+.hero-management-fields {
+  display: grid;
+  gap: 16px;
+
+  padding: 22px;
+}
+
+.hero-management-fields.two-column {
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+}
+
+.hero-management-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero-management-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.hero-management-field label {
+  color: #cfcfcf;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.hero-management-field input,
+.hero-management-field textarea,
+.hero-management-upload-card input {
+  width: 100%;
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 7px;
+  outline: none;
+
+  background: #191919;
+  color: #ffffff;
+
+  font-size: 11px;
+}
+
+.hero-management-field input,
+.hero-management-upload-card input {
+  height: 43px;
+
+  padding: 0 13px;
+}
+
+.hero-management-field textarea {
+  min-height: 115px;
+
+  padding: 13px;
+
+  resize: vertical;
+}
+
+.hero-management-field input:focus,
+.hero-management-field textarea:focus,
+.hero-management-upload-card input:focus {
+  border-color: rgba(229, 9, 20, 0.7);
+}
+
+.hero-management-media-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 15px;
+
+  padding: 22px;
+}
+
+.hero-management-upload-card {
+  padding: 20px;
+
+  border: 1px dashed rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+
+  background: #171717;
+}
+
+.hero-management-upload-card > svg {
+  margin-bottom: 14px;
+
+  color: #e50914;
+
+  font-size: 23px;
+}
+
+.hero-management-upload-card h3 {
+  margin: 0 0 7px;
+
+  font-size: 13px;
+}
+
+.hero-management-upload-card p {
+  min-height: 32px;
+
+  margin: 0 0 14px;
+
+  color: #6d6d6d;
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.hero-management-preview-card {
+  align-self: start;
+
+  position: sticky;
+  top: 105px;
+}
+
+.hero-preview-heading {
+  padding: 19px 20px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.hero-preview-heading span {
+  color: #e50914;
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.hero-preview-heading h2 {
+  margin: 6px 0 0;
+
+  font-size: 16px;
+}
+
+.hero-preview {
+  min-height: 390px;
+
+  display: flex;
+  align-items: flex-end;
+
+  padding: 28px;
+
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-preview-content {
+  max-width: 450px;
+}
+
+.hero-preview-content h1 {
+  margin: 0 0 14px;
+
+  font-size: 36px;
+  line-height: 1;
+}
+
+.hero-preview-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-bottom: 14px;
+
+  color: #d5d5d5;
+
+  font-size: 9px;
+}
+
+.hero-preview-content p {
+  margin: 0;
+
+  color: #c5c5c5;
+
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.hero-preview-buttons {
+  display: flex;
+  gap: 9px;
+
+  margin-top: 18px;
+}
+
+.hero-preview-buttons button {
+  min-height: 36px;
+
+  padding: 0 13px;
+
+  border: none;
+  border-radius: 5px;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.hero-preview-buttons button:first-child {
+  background: #ffffff;
+  color: #111111;
+}
+
+.hero-preview-buttons button:last-child {
+  background: rgba(109, 109, 110, 0.7);
+  color: #ffffff;
+}
+
+@media (max-width: 1100px) {
+  .hero-management-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-management-preview-card {
+    position: static;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-management-top {
+    flex-direction: column;
+  }
+
+  .hero-management-save {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-management-fields.two-column,
+  .hero-management-media-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-management-field.full-width {
+    grid-column: auto;
+  }
+}
+.hero-preview-title-logo {
+  width: min(330px, 70%);
+  max-height: 130px;
+
+  margin-bottom: 18px;
+
+  object-fit: contain;
+  object-position: left center;
+}
+
+.hero-preview-title-placeholder {
+  width: 260px;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 18px;
+
+  border: 1px dashed #555;
+  border-radius: 8px;
+
+  color: #777;
+  font-size: 12px;
+}
+.hero-management-upload-card input[type="file"] {
+  width: 100%;
+
+  padding: 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+
+  background: #1a1a1a;
+  color: #bcbcbc;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+.hero-selected-file {
+  display: block;
+
+  margin-top: 9px;
+
+  color: #63d989;
+
+  font-size: 9px;
+
+  word-break: break-all;
+}
+
+.hero-preview-wrapper {
+  position: relative;
+
+  min-height: 390px;
+
+  overflow: hidden;
+
+  background: #080808;
+}
+
+.hero-preview-background,
+.hero-preview-video {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.hero-preview-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.95) 0%,
+      rgba(0, 0, 0, 0.65) 45%,
+      rgba(0, 0, 0, 0.12) 100%
+    ),
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7),
+      transparent 55%
+    );
+}
+
+.hero-preview-content {
+  position: relative;
+  z-index: 3;
+
+  min-height: 390px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 28px;
+
+  max-width: 470px;
+}
+
+.hero-preview-title-logo {
+  width: min(320px, 75%);
+  max-height: 125px;
+
+  margin-bottom: 18px;
+
+  object-fit: contain;
+  object-position: left center;
+}
+
+.hero-preview-title-placeholder {
+  width: 250px;
+  height: 85px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 18px;
+
+  border: 1px dashed #555555;
+  border-radius: 8px;
+
+  color: #777777;
+
+  font-size: 11px;
+}
+
+.hero-preview-no-media {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #555555;
+
+  font-size: 13px;
+}
+
+.hero-preview-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+
+  margin-bottom: 14px;
+
+  color: #ffffff;
+
+  font-size: 9px;
+}
+
+.hero-preview-content p {
+  max-width: 400px;
+
+  margin: 0;
+
+  color: #d0d0d0;
+
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.hero-preview-buttons {
+  display: flex;
+  gap: 9px;
+
+  margin-top: 18px;
+}
+
+.hero-preview-buttons button {
+  min-height: 36px;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 0 14px;
+
+  border: none;
+  border-radius: 5px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.hero-preview-buttons button:first-child {
+  background: #ffffff;
+  color: #111111;
+}
+
+.hero-preview-buttons button:last-child {
+  background: rgba(109, 109, 110, 0.75);
+  color: #ffffff;
+}

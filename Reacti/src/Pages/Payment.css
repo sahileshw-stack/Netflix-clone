@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+}
+
+.payment-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.payment-header {
+  width: 100%;
+  height: 105px;
+  padding: 0 11.5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #dddddd;
+}
+
+.payment-logo {
+  width: 170px;
+}
+
+.payment-signout {
+  border: none;
+  background: transparent;
+
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.payment-signout:hover {
+  text-decoration: underline;
+}
+
+.payment-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  padding: 70px 20px 95px;
+}
+
+.payment-container {
+  width: 460px;
+}
+
+.payment-lock-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #e50914;
+  border-radius: 50%;
+
+  color: #e50914;
+  font-size: 23px;
+}
+
+.payment-container h1 {
+  margin: 0 0 20px;
+
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.payment-description {
+  margin: 0 0 28px;
+
+  color: #222222;
+  font-size: 17px;
+}
+
+.encrypted-text {
+  margin: 0 0 7px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+
+  font-size: 14px;
+}
+
+.encrypted-text i {
+  color: #666666;
+}
+
+.payment-option {
+  width: 100%;
+  min-height: 64px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1px solid #b8b8b8;
+  border-radius: 4px;
+
+  background-color: #ffffff;
+  color: #111111;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.payment-option:hover {
+  background-color: #f7f7f7;
+}
+
+.payment-option-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 17px;
+}
+
+.payment-logos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.upi-brand {
+    width: 42px;
+    height: 26px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.upi-brand img {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain;
+}
+.visa-logo {
+  padding: 2px 5px;
+
+  border: 1px solid #dedede;
+  border-radius: 3px;
+
+  color: #1939a5;
+  font-size: 14px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.mastercard-logo {
+  position: relative;
+  width: 36px;
+  height: 22px;
+
+  border: 1px solid #dedede;
+  border-radius: 3px;
+}
+
+.mastercard-logo span {
+  position: absolute;
+  top: 4px;
+
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.mastercard-logo span:first-child {
+  left: 7px;
+  background-color: #eb001b;
+}
+
+.mastercard-logo span:last-child {
+  right: 7px;
+  background-color: #f79e1b;
+  opacity: 0.9;
+}
+
+.upi-brand {
+  padding: 3px 5px;
+
+  border: 1px solid #dedede;
+  border-radius: 3px;
+
+  background-color: #ffffff;
+  color: #444444;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.payment-option > i {
+  color: #444444;
+  font-size: 17px;
+}
+
+.promo-link {
+  margin-top: 12px;
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #0068c9;
+  font-size: 16px;
+  text-decoration: underline;
+
+  cursor: pointer;
+}
+
+.payment-footer {
+  min-height: 220px;
+  padding: 60px 11.5%;
+
+  background-color: #f3f3f3;
+  border-top: 1px solid #dddddd;
+}
+
+.payment-footer-inner {
+  max-width: 1250px;
+  margin: 0 auto;
+
+  color: #555555;
+}
+
+.payment-footer-inner > p {
+  margin: 0 0 30px;
+
+  font-size: 17px;
+}
+
+.payment-footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px 40px;
+}
+
+.payment-footer-links a {
+  color: #444444;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .payment-header {
+    height: 80px;
+    padding: 0 24px;
+  }
+
+  .payment-logo {
+    width: 125px;
+  }
+
+  .payment-signout {
+    font-size: 15px;
+  }
+
+  .payment-main {
+    padding: 45px 24px 70px;
+  }
+
+  .payment-container {
+    width: 100%;
+    max-width: 460px;
+  }
+
+  .payment-container h1 {
+    font-size: 30px;
+  }
+
+  .payment-option {
+    padding: 10px 15px;
+  }
+
+  .payment-option-left {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .payment-footer {
+    padding: 45px 24px;
+  }
+
+  .payment-footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
